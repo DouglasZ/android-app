@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/listaPedidosLayout">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/txt_labelCod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:text="Cod."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_idPedido"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="1"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="@+id/txt_labelCod"
+                app:layout_constraintTop_toBottomOf="@+id/txt_labelCod" />
+
+            <TextView
+                android:id="@+id/txt_labelNomeComprador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:text="Vendido para:"
+                app:layout_constraintStart_toEndOf="@+id/txt_labelCod"
+                app:layout_constraintTop_toTopOf="@+id/txt_labelCod" />
+
+            <TextView
+                android:id="@+id/txt_NomeComprador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:text="Nome Comprador"
+                app:layout_constraintStart_toStartOf="@+id/txt_labelNomeComprador"
+                app:layout_constraintTop_toBottomOf="@+id/txt_labelNomeComprador" />
+
+            <TextView
+                android:id="@+id/txt_labelDataCompra"
+                android:layout_width="80dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="10dp"
+                android:text="Data Compra"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_DataCompra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="01/01/2020"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/txt_labelDataCompra"
+                app:layout_constraintTop_toBottomOf="@+id/txt_labelDataCompra" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
